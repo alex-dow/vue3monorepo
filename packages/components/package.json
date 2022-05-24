@@ -1,0 +1,26 @@
+{
+    "name": "@vue3test/components",
+    "version": "1.0.0",
+    "scripts": {
+        "start:dev": "vite build --watch",
+        "build": "vite build"
+    },
+    "types": "./dist/types/index.d.ts",
+    "module": "./dist/components.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/components.es.js"
+        }
+    },
+    "peerDependencies": {
+        "vue": "^3.2.33"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.3.3",
+        "typescript": "^4.6.4",
+        "vite": "^2.9.9",
+        "vite-plugin-dts": "^1.1.1",
+        "vue": "^3.2.36",
+        "vue-tsc": "^0.34.16"
+    }
+}

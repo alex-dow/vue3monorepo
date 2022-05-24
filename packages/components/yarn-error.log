@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\adowgail\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --dev vite vite-plugin-dts vue-tsc typescript @vitejs/plugin-vue
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot\bin;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\apache-maven-3.8.1\bin;C:\Program Files\CMake\bin;C:\Program Files\nodejs\;C:\Users\adowgail\AppData\Local\Microsoft\WindowsApps;C:\Users\adowgail\AppData\Local\Yarn\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\adowgail\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  14.19.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\adowgail\Documents\Vue3Monorepo\packages\app\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Users\adowgail\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\adowgail\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\adowgail\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "@vue3test/components",
+      "version": "1.0.0",
+      "scripts": {
+          "dev": "vite build --watch",
+          "build": "vite build"
+      },
+      "types": "./dist/types/index.d.ts",
+      "module": "./dist/components.js",
+      "exports": {
+          ".": {
+              "import": "./dist/components.js"
+          }
+      },
+      "peerDependencies": {
+          "vue": "^3.2.33"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
